@@ -2,8 +2,6 @@
 
 HashMap基于哈希表的Map接口实现，是以key-value键值对存储形式存在。在 JDK1.8 中，HashMap 是由 数组+链表+红黑树构成，新增了红黑树作为底层数据结构，结构变得复杂了，但是效率也变的更高效。当一个值中要存储到Map的时候会根据Key的值来计算出他的hashcode，通过哈希来确认到数组的位置，如果发生哈希碰撞就以链表的形式存储 在Object源码分析中解释过，但是这样如果链表过长来的话，HashMap会把这个链表转换成红黑树来存储。
 
-![text](E:\algorithm008-class02\Week_02\hashmap.PNG)
-
 ![avatar](https://github.com/agnesjn/algorithm008-class02/blob/master/Week_02/hashmap.PNG)
 
 ## 属性
